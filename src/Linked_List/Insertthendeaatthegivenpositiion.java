@@ -51,8 +51,9 @@ public class Insertthendeaatthegivenpositiion {
 
         Node<Integer>c=new Node<>(data);
         int posiotn=0;
-        while(temp!=null && posiotn<pos){
+        while(temp!=null && posiotn<pos-1){
             temp=temp.next;
+            posiotn++;
         }
         c.next=temp.next;
         temp.next=c;
